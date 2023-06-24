@@ -1,5 +1,4 @@
 # Mohamed Abdalla
-# ID: 19106978
 
 from OpenGL.GL import *
 from OpenGL.GLUT import *
@@ -14,7 +13,7 @@ def myInit():
 def display():
     glClear(GL_COLOR_BUFFER_BIT)
     glBegin(GL_TRIANGLE_FAN)
-    glColor3f(1.0, 0.9, 0.0) #yellow circle (sun)
+    glColor3f(1.0, 0.9, 0.0) #Yellow circle (sun)
     x_centre = 462
     y_centre = 38
     r = 35
@@ -25,7 +24,7 @@ def display():
         glVertex2f(x + x_centre, y + y_centre)
     glEnd()
     
-    glColor3f(0.9, 0.8, 0.6)  #sand color
+    glColor3f(0.9, 0.8, 0.6)  #Sand color
     glRectf(0, 250, 500, 500) #(left,up,right,down)
     
     glColor3f(0.8, 0.4, 0.1) #Brown color (House)
@@ -62,7 +61,7 @@ glutInit()
 glutInitDisplayMode(GLUT_SINGLE | GLUT_RGBA)
 glutInitWindowSize(500, 500)
 glutInitWindowPosition(450, 100)
-glutCreateWindow("Assignment_1")
+glutCreateWindow("House")
 
 myInit()
 glutDisplayFunc(display)
